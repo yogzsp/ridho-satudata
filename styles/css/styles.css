@@ -1,0 +1,164 @@
+html,body{
+    margin: 0;
+    width: 100%;
+}
+
+.container{
+    padding: 20px 50px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 50%;
+    background-color: #FFA800;
+}
+.pages-name ul{
+    list-style: none; 
+    padding: 0px;
+}
+.pages-name li {
+    display: inline;
+}
+.pages-name li:not(:last-child):after {
+    content: "/";
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.pages-name li:last-child {
+    font-weight: bold;
+}
+
+.container-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-bw{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.search-input{
+    width: 100%;
+    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.search-input input{
+    flex: 1;
+    box-sizing: border-box;
+    border:none;
+    padding:10px 10px;
+    padding-left: 20px;
+}
+.search-input button{
+    padding: 10px 15px;
+    border:none;
+    background-color: #0D5FFF;
+}
+
+.filter-list select{
+    min-width: 100px;
+    margin: 10px 20px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: white;
+    border:solid 1px black;
+    border-radius: 3px;
+}
+
+.list-item{
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.list-item .list-capt{
+    border-top: solid 2px black;
+    padding: 5px 15px;
+    padding-bottom: 10px;
+}
+#list-dashboard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.list-item{
+    margin: 10px;
+}
+
+
+.list-pages ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+    color: white;
+}
+.list-pages a{
+    text-decoration: none;
+    color: white;
+}
+.list-pages li{
+    width: 40px;
+    height: 40px;
+    flex: 1;
+    background-color:rgb(125, 114, 108, 0.83);
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.list-pages .active{
+    background-color: #57504C;
+}
+
+.table-custom{
+    margin:30px 0px;
+    width: 100%;
+    border: solid 1px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table-custom .table-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-custom .table-header div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.table-custom .table-data table{
+    width: 100%;
+    border-top: 1px solid gray;
+    border-spacing: 0px 20px;
+}
+.table-custom .table-data td{
+    padding: 40px 5px;
+}
+.table-custom .table-data .table-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table-custom .table-data table .table-icon a{
+    fill: #7F5138;
+    flex: 1;
+}
+.table-custom .table-data table .table-icon a svg{
+    width: 25px;
+}
+.table-custom .table-data table tr:hover{
+    background-color: rgb(125, 114, 108,0.8);
+}
